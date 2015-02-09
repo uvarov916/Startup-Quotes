@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Startup Quotes",
+  "description": "This extension shows you random startup quote in a new tab.",
+  "version": "0.1",
+
+  "chrome_url_overrides": {
+      "newtab": "index.html"
+  },
+
+  "permissions": [
+    "tabs"
+  ]
+}
