@@ -11,19 +11,19 @@
     <div class="row">
       <div class="quote-group columns small-10 medium-6 small-centered text-center">
         
-        <span class="quote-number">#{{ quote.number }}</span>
+        <span class="quote-number" ng-bind="quote.number"></span>
 
         <div class="quote-text-and-author">
           
-          <div class="quote-text">{{ quote.text }}</div>  
-          <div class="quote-author">{{ quote.author }}</div>
+          <div class="quote-text" ng-bind="quote.text"></div>  
+          <div class="quote-author" ng-bind="quote.author"></div>
         
         </div>
       
       </div> <!-- /.quote-group -->
     </div> <!-- /.row -->
 
-    <div class="quote-category">#{{ quote.category }}</div>
+    <div class="quote-category" ng-bind="quote.category"></div>
 
 
     <script src="js/angular.js"></script>
