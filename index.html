@@ -11,7 +11,7 @@
     <div class="row">
       <div class="quote-group columns small-10 medium-6 small-centered text-center">
         
-        <span class="quote-number" ng-bind="quote.number"></span>
+        <span class="quote-number" ng-bind-template="#{{quote.number}}"></span>
 
         <div class="quote-text-and-author">
           
@@ -23,7 +23,7 @@
       </div> <!-- /.quote-group -->
     </div> <!-- /.row -->
 
-    <div class="quote-category" ng-bind="quote.category"></div>
+    <div class="quote-category" ng-bind-template="#{{quote.category}}"></div>
 
 
     <script src="js/angular.js"></script>
