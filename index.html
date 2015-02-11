@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
     <link rel="stylesheet" href="css/app.css" />
-    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/min/data-min.js"></script>
   </head>
   <body ng-controller="QuoteController">
     <div class="row">
@@ -13,11 +13,9 @@
         
         <span class="quote-number" ng-bind-template="#{{quote.number}}"></span>
 
-        <div class="quote-text-and-author">
-          
+        <div class="quote-text-and-author">       
           <div class="quote-text" ng-bind="quote.text"></div>  
           <div class="quote-author" ng-bind="quote.author"></div>
-        
         </div>
       
       </div> <!-- /.quote-group -->
@@ -26,8 +24,8 @@
     <div class="quote-category" ng-bind-template="#{{quote.category}}"></div>
 
 
-    <script src="js/angular.js"></script>
+    <script src="js/min/angular-min.js"></script>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/min/app-min.js"></script>
   </body>
 </html>
