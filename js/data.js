@@ -103,7 +103,7 @@ var quotes = [
   },
   {
     number: "018",
-    text: "Innovation is hard because 'solving problems people didn't know they had' and 'building something no one needs' look identical at first.",
+    text: "Innovation is hard because <i>&lsquo;solving problems people didn't know they had&rsquo;</i> and <i>&lsquo;building something no one needs&rsquo;</i> look identical at first.",
     author: "Aaron Levie, Box",
     category: "think"
   },

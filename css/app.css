@@ -5660,11 +5660,41 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('../fonts/Titillium_Web/TitilliumWeb-Light.ttf');
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('../fonts/Titillium_Web/TitilliumWeb-Regular.ttf');
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('../fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/Lora/Lora-Regular.ttf');
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/Lora/Lora-Italic.ttf');
+  font-weight: 400;
+  font-style: italic; }
+
 body {
   background-color: #FBFDFF;
+  font-family: "Titillium Web", 'Open Sans', Arial, sans-serif;
   color: #7B9BB4;
-  font-weight: 300;
-  font-family: "Titillium Web"; }
+  font-weight: 300; }
 
 .quote-group {
   padding-top: 6rem;
@@ -5682,17 +5712,28 @@ body {
   .quote-group .quote-text-and-author {
     margin-top: 6rem; }
     .quote-group .quote-text-and-author .quote-text {
-      font-size: 32px;
+      font-size: 1.8rem;
       font-weight: 300; }
+      .quote-group .quote-text-and-author .quote-text i {
+        font-style: italic;
+        font-weight: 200;
+        font-family: "Lora", Times, 'Times New Roman', serif; }
     .quote-group .quote-text-and-author .quote-author {
       margin-top: 2rem;
-      font-size: 24px;
+      font-size: 1.5rem;
       color: #A8BDCD; }
 
-.quote-category {
+.quote-category, .quote-source {
   position: absolute;
   width: 100%;
-  bottom: 2rem;
-  font-weight: 400;
-  text-transform: uppercase;
   text-align: center; }
+
+.quote-category {
+  bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.quote-source {
+  bottom: 1rem;
+  font-size: .6rem; }

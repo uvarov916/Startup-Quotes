@@ -1,20 +1,24 @@
 <!doctype html>
-<html class="no-js" lang="en" ng-app>
+<html class="no-js" lang="en" ng-app="myApp">
+  
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Tab</title>
     <link rel="stylesheet" href="css/app.css" />
     <script type="text/javascript" src="js/min/data-min.js"></script>
+    <script src="js/min/angular-min.js"></script>
+    <script src="js/angular-sanitize.js"></script>
   </head>
+
   <body ng-controller="QuoteController">
     <div class="row">
-      <div class="quote-group columns small-10 medium-6 small-centered text-center">
+      <div class="quote-group columns small-12 medium-6 small-centered text-center">
         
         <span class="quote-number" ng-bind-template="#{{quote.number}}"></span>
 
         <div class="quote-text-and-author">       
-          <div class="quote-text" ng-bind="quote.text"></div>  
+          <div class="quote-text" ng-bind-html="quote.text"></div>  
           <div class="quote-author" ng-bind="quote.author"></div>
         </div>
       
@@ -22,10 +26,9 @@
     </div> <!-- /.row -->
 
     <div class="quote-category" ng-bind-template="#{{quote.category}}"></div>
+    <div class="quote-source">All quotes are taken from <a href="http://www.startupvitamins.com/book" target="_blank">"Get Sh*t Done"</a> book.</div>
 
-
-    <script src="js/min/angular-min.js"></script>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="js/min/app-min.js"></script>
+    <script src="js/app.js"></script>
   </body>
+
 </html>
